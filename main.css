@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #2b333f43;
+}
+
+/* Estilo do Header */
+header {
+background-color: #2b333f;
+    color: #fff;
+}
+
+header h1{
+    font-style: italic;
+}
+/* Container Geral */
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo do Header dentro do Container */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+/* Estilo do Menu */
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 8px;
+    font-size: 20px;
+}
+
+/* Estilo dos Links no Menu */
+li a {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Conteúdo Geral */
+.sobreAloja {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Estilo da Seção "Sobre a Loja" */
+.artLoja {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo do Título da Seção "Sobre a Loja" */
+h2 {
+    color: #2b333f;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Estilo da Imagem na Seção "Sobre a Loja" */
+#ImageSobreLoja {
+    border-radius: 4px;
+    width: 320px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+/* Estilo do Texto na Seção "Sobre a Loja" */
+
+.artLoja p {
+    overflow: hidden; 
+    margin-top: 90px;
+    font-size: 24px;
+}
+
+/* Estilo dos Itens Elétricos */
+.eletricItems a { 
+    text-decoration: none;
+    color: inherit;
+    cursor: initial;
+}
+
+/* Estilo das Imagens dos Itens Elétricos */
+.eletricItems img {
+    border-radius: 4px;
+    width: 150px;
+    max-width: 100%;
+}
+
+/*Estilo do conteúdo sobre os preços e produtos*/
+.futuro {
+    margin-left: 25px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceOff {
+    margin-top: 5px;
+    text-decoration: line-through;
+    color: rgb(138, 141, 143);
+}
+
+.productDetails h1 {
+    margin-top: 2px;
+    color: #8A8D8A;
+}
+
+.descount {
+    color: rgb(44, 191, 89);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.apresentation {
+    margin-top: 4px;
+    color: #8A8D8F;
+}
+
+/*Estilo dos botões*/
+
+#botao {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#botao:hover{
+    color: #5eff00;
+}
+
+
+@media screen and (max-width: 767px) { 
+    .container h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .menu li a:hover{
+        text-decoration: underline;
+    }
+    .menu li a {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #sobre-a-loja, #produtos {
+            width: 100%;
+            max-width: 400px;
+    }
+
+    .sobreAloja {
+        width: 90%;
+    }
+    
+    
+    /* Estilo da Seção "Sobre a Loja" */
+    .artLoja {
+        display: block;
+    }
+    .artLoja p {
+        margin-top: 15px;
+        font-size: 16px;
+        margin-left: 25px;
+    }
+    
+    /* Estilo do Título da Seção "Sobre a Loja" */
+    h2 {
+        color: #2b333f;
+        display: block;
+        font-style: italic;
+        
+    }
+
+    #ImageSobreLoja {
+        border-radius: 4px;
+        width: 240px;
+        margin-top: 15px;
+        
+    }
+        .futuro {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Uma coluna para telas pequenas */
+            gap: 20px; /* Espaçamento entre os itens */
+        }
+    
+        .eletricItems {
+            width: 100%; /* Ocupar toda a largura da coluna */
+            max-width: none; /* Remover a largura máxima dos itens */
+            align-items:center;
+        }
+
+        #botao:hover{
+            color: #5eff00;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .futuro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias */
+        gap: 20px; /* Espaçamento entre os itens */
+        align-items: center; /* Centralizar os itens nas colunas */
+    }
+
+    #botao:hover{
+        color: #5eff00;
+    }
+}
+
