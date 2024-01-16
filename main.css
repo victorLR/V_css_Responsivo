@@ -49,6 +49,10 @@ li a {
     font-weight: bold;
 }
 
+li a:hover{
+    text-decoration: underline;
+}
+
 /* Conteúdo Geral */
 .sobreAloja {
     max-width: 1024px;
@@ -219,30 +223,20 @@ h2 {
         background-color: #f0f0f0; 
         border-radius: 8px; 
     }
-}
-
-        .futuro {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Uma coluna para telas pequenas */
-            gap: 10px; /* Espaçamento entre os itens */
-        }
     
-        .eletricItems {
-            width: 100%; /* Ocupar toda a largura da coluna */
-            max-width: none; /* Remover a largura máxima dos itens */
-            align-items:center;
-        }
+    .futuro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Uma coluna para telas pequenas */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
 
-        #botao{
-            animation: none !important;
-        }
-
-        #botao:hover{
-            color: #5eff00;
-        }
-
-
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .eletricItems {
+        width: 100%; /* Ocupar toda a largura da coluna */
+        max-width: none; /* Remover a largura máxima dos itens */
+        align-items:center;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1180px) {
     .futuro {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias */
@@ -252,5 +246,24 @@ h2 {
 
     #botao:hover{
         color: #5eff00;
+    }
+}
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+    .futuro {
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Três colunas para telas grandes em orientação paisagem */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    .artLoja {
+        display: block;
+    }
+    .artLoja p {
+        margin-top: 15px;
+        font-size: 16px;
+        margin-left: 25px;
+        width: 90%;
     }
 }
