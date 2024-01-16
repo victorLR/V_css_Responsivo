@@ -155,7 +155,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 640px) { 
     .container h1 {
         font-size: 25px;
         margin-bottom: 15px;
@@ -226,7 +226,7 @@ h2 {
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 641px) and (max-width: 1023px) {
     .futuro {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias */
