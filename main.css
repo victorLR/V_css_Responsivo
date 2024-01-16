@@ -221,6 +221,10 @@ h2 {
             align-items:center;
         }
 
+        #botao{
+            animation: none !important;
+        }
+
         #botao:hover{
             color: #5eff00;
         }
@@ -238,4 +242,3 @@ h2 {
         color: #5eff00;
     }
 }
-
